@@ -37,7 +37,7 @@ This project was built using pure front-end technologies:
 Option 1: Play Online (GitHub Pages)
 
 You can play the game anytime through the live link below:
-🔗https://carenjavier328-hue.github.io/DC101_Game_BonaobraAngela/
+🔗 https://angelalacerna01-bot.github.io/DC101_Game_BonaobraAngela/
 
 Option 2: Run Locally on Your Computer
 
