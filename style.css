@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: radial-gradient(circle at top, #34495e, #2c3e50);
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+header {
+    background-color: #1a1d23;
+    padding: 20px;
+}
+
+.subtitle {
+    opacity: 0.9;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
+
+.level-buttons {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.level-buttons button {
+    width: 260px;
+    padding: 18px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    color: white;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #34495e;
+    padding: 25px;
+    border-radius: 15px;
+    width: 240px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.choice {
+    font-size: 80px;
+    margin: 20px 0;
+}
+
+.center-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.center-buttons button {
+    padding: 18px 26px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #e74c3c, #c0392b);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.vs {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.result-box {
+    margin-top: 30px;
+}
+
+.result-box h2 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+#score {
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+.popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup-box {
+    background: #34495e;
+    padding: 30px;
+    border-radius: 20px;
+    pointer-events: auto; 
+}
+
+.popup-box h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.popup-box button {
+    margin: 10px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #3498db, #2980b9);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.popup-box button:hover {
+    transform: scale(1.1);
+}

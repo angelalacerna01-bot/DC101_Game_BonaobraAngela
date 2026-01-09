@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="level-screen" class="screen active">
+    <header>
+        <h1>🎮 Rock Paper Scissors</h1>
+        <p class="subtitle">Choose Difficulty</p>
+    </header>
+
+    <div class="level-buttons">
+        <button>🟢 Easy (3 Rounds)</button>
+        <button>🟡 Medium (5 Rounds)</button>
+        <button>🔴 Hard (7 Rounds)</button>
+    </div>
+</div>
+
+<div id="game-screen" class="screen">
+    <header>
+        <h1>🎮 Rock Paper Scissors Arena</h1>
+        <p id="round-info">Round 1</p>
+        <p id="score">You: 0 | Computer: 0</p>
+    </header>
+
+    <main class="arena">
+        <section class="card">
+            <h2>You</h2>
+            <div class="choice" id="user-choice">❓</div>
+        </section>
+
+        <section class="vs">VS</section>
+
+        <section class="card">
+            <h2>Computer 🤖</h2>
+            <div class="choice" id="computer-choice">❓</div>
+        </section>
+    </main>
+
+    <div class="center-buttons">
+        <button id="rock">✊ Rock</button>
+        <button id="paper">✋ Paper</button>
+        <button id="scissors">✌️ Scissors</button>
+    </div>
+
+    <section class="result-box">
+        <h2 id="result">Make your move!</h2>
+    </section>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-box">
+        <h2 id="final-result"></h2>
+        <button id="play-again">🔁 Play Again</button>
+        <button id="back-to-levels">⬅ Back to Levels</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
